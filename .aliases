@@ -17,9 +17,9 @@ alias preview="fzf --preview='bat --color=always --style=numbers --theme OneHalf
 alias fvim='vim $(fzf -m --preview="bat --color=always --style=numbers --theme OneHalfDark {}" --preview-window=down)'
 alias fcd="cd \$(find . -type d | fzf)"
 if command -v batcat &>/dev/null; then
-    alias cat='batcat --theme OneHalfDark -p'
+    alias cat='batcat --theme OneHalfDark'
 else
-    alias cat='bat --theme OneHalfDark -p'
+    alias cat='bat --theme OneHalfDark'
 fi
 alias reload="termux-reload-settings"
 alias psu="ps aux"
